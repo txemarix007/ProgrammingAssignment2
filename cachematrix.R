@@ -1,7 +1,7 @@
 ################################################################
 ## These two functions calculate the inverse of a matrix.
 ## The first one (makeCacheMatrix) creates the variables and functions,
-## and the second one computes the inverse (the first time) and the
+## and the second one (cacheSolve) computes the inverse (the first time) and the
 ## following (after checking that the original matrix to get inverted is the
 ## same) returns the "already computed matrix".
 ################################################################
@@ -36,7 +36,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Checks if there is a previos object and if the object refers to
 ## the same (original) matrix.
 ## If that is the case, returns the already cached value.
-## If not, computes the inverse with "solve"
+## If not, computes the inverse with "solve" (and returns it)
 ###############################################################
 
 cacheSolve <- function(x, ...) {
